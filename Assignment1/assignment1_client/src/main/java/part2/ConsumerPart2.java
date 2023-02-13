@@ -58,7 +58,6 @@ public class ConsumerPart2 implements Runnable{
         long startPost = System.currentTimeMillis();
         int statusCode = swipeApi.swipeWithHttpInfo(swipeData.getSwipeDetails(), swipeData.getLeftOrRight()).getStatusCode();
         if (statusCode == HttpStatus.SC_CREATED || statusCode == HttpStatus.SC_OK) {
-//          successful_requests.getAndIncrement();
           long endPost = System.currentTimeMillis();
 
           record.getRecordList().add(new String[]{String.valueOf(startPost), "POST", String.valueOf(endPost - startPost), String.valueOf(statusCode)});
@@ -78,7 +77,6 @@ public class ConsumerPart2 implements Runnable{
         retry++;
       }
     }
-//    unsuccessful_requests.getAndIncrement();
     unsucess++;
   }
 

@@ -70,23 +70,8 @@ public class Main {
     System.out.println("Number of Threads: "+ NUM_TOTAL_CONSUMER_THREADS );
     System.out.println("Little's Law Expected Throughput: " +  String.format("%.2f",(double)Math.min(NUM_TOTAL_PRODUCER_THREADS, NUM_TOTAL_CONSUMER_THREADS )/ 0.0343 ));
     System.out.println("------------------------------------------------------");
-    double latency = TimeUnit.MILLISECONDS.toSeconds(wallTime) / (double)NUM_TOTAL_SWIPE_REQUESTS;
-    double littleLaw = (double)NUM_TOTAL_CONSUMER_THREADS / latency;
-    System.out.println("Number of Producer: "+ NUM_TOTAL_PRODUCER_THREADS );
-    System.out.println("Number of ConsumerPart2: " + NUM_TOTAL_CONSUMER_THREADS);
-    double la = (long)wallTimeSeconds / (double)NUM_TOTAL_SWIPE_REQUESTS;
-    System.out.println("latency: " + (long)wallTimeSeconds / (double)NUM_TOTAL_SWIPE_REQUESTS);
-    System.out.println("Little Law Throughout: " + String.format("%.2f",(double)Math.max(NUM_TOTAL_PRODUCER_THREADS, NUM_TOTAL_CONSUMER_THREADS )/ (double)la ));
-    System.out.println("Average Latency: " + 0.0343);
-    System.out.println("Expect Throughout: " + (double)Math.max(NUM_TOTAL_PRODUCER_THREADS, NUM_TOTAL_CONSUMER_THREADS )/ 0.0343 );
 
   }
 
 
 }
-
-//    for (int i = 0; i < NUM_TOTAL_CONSUMER_THREADS; i++) {
-//      SwipeApi swipeApi = new SwipeApi();
-//      swipeApi.getApiClient().setBasePath(BASE_PATH_REMOTE);
-//      new Thread(new SwipePost(NUM_CONSUMERS_EACH_THREAD, successful_requests,unsuccessful_requests,countDownLatch,swipeApi)).start();
-//    }

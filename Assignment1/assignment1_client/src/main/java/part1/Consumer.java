@@ -36,11 +36,6 @@ public class Consumer implements Runnable{
 
   @Override
   public void run() {
-//    ApiClient apiClient = new ApiClient();
-//    apiClient.setConnectTimeout(500000);
-//    apiClient.setReadTimeout(500000);
-//    apiClient.setBasePath(basePath);
-//    SwipeApi swipeApi = new SwipeApi(apiClient);
     for (int i = 0; i < number_req_each_thread; i++) {
       try {
         swipePost(swipeApi, bq.take());
@@ -61,7 +56,6 @@ public class Consumer implements Runnable{
 
         int statusCode = swipeApi.swipeWithHttpInfo(swipeData.getSwipeDetails(), swipeData.getLeftOrRight()).getStatusCode();
         if (statusCode == HttpStatus.SC_CREATED || statusCode == HttpStatus.SC_OK) {
-//          successful_requests.getAndIncrement();
           sucess++;
           return;
         }
@@ -74,7 +68,6 @@ public class Consumer implements Runnable{
         retry++;
       }
     }
-//    unsuccessful_requests.getAndIncrement();
     unsucess++;
   }
 

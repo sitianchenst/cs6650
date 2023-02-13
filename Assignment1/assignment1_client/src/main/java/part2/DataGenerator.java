@@ -54,7 +54,7 @@ public class DataGenerator {
   public void generateData(double wallTimeSeconds, double total_requests) {
     System.out.println("Mean Response Time: " + calculateMeanResponseTime() + " milliseconds");
     System.out.println("Median Response Time: " + calculateMedianResponseTime() + " milliseconds");
-//    System.out.println("Throughput: " + String.format("%.2f", calculateThroughput(wallTimeSeconds, total_requests)) + " requests per seconds");
+    System.out.println("Throughput: " + String.format("%.2f", calculateThroughput(wallTimeSeconds, total_requests)) + " requests per seconds");
     System.out.println("99th Percentile Response Time: " + calculateP99() + " milliseconds");
     System.out.println("Minimum Response Time: " + calculateMinTime() + " milliseconds");
     System.out.println("Maximum Response Time: " + calculateMaxTime() + " milliseconds");
