@@ -1,0 +1,16 @@
+part1/Producer.class
+part2/ConsumerPart2.class
+Model/SwipeAction.class
+part2/Main.class
+part2/SwipeData.class
+MultiThreadClient.class
+Model/SwiperProcessor.class
+Model/SwipeActionGenerator.class
+part2/Producer.class
+part2/CSVGenerator.class
+part1/Consumer.class
+part1/Main.class
+part1/SwipeData.class
+part2/Record.class
+part2/DataGenerator.class
+part1/SwipePost.class
