@@ -79,7 +79,12 @@ public class TwinderServlet extends HttpServlet {
         return false;
       }
 
-      // TODO: check swipee and swiper are number?
+      int swipee = Integer.parseInt(swipe.getSwipee());
+      int swiper = Integer.parseInt(swipe.getSwiper());
+
+      if (swipee < 1 || swipee > 1000000 || swiper < 1 || swiper > 5000 || swipe.getComment().length() > 256) {
+        return false;
+      }
 
     } catch (IOException e) {
       e.printStackTrace();
