@@ -55,6 +55,13 @@ public class SwipeController {
         return false;
       }
 
+      int swipee = Integer.parseInt(swipe.getSwipee());
+      int swiper = Integer.parseInt(swipe.getSwiper());
+
+      if (swipee < 1 || swipee > 1000000 || swiper < 1 || swiper > 5000 || swipe.getComment().length() > 256) {
+        return false;
+      }
+
     } catch (IOException e) {
       e.printStackTrace();
       return false;
