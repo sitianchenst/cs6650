@@ -38,6 +38,7 @@ public class RMQChannelPool {
       Channel chan;
       try {
         chan = factory.create();
+        chan.exchangeDeclare("exchange", "fanout", true);
         pool.put(chan);
       } catch (IOException | InterruptedException ex) {
         Logger.getLogger(RMQChannelPool.class.getName()).log(Level.SEVERE, null, ex);
