@@ -22,16 +22,16 @@ import rmqpool.RMQChannelPool;
 @WebServlet(name = "TwinderServlet", value = "/TwinderServlet")
 public class TwinderServlet extends HttpServlet {
 
-    private static final int NUM_CHANNALS = 30;
+    private static final int NUM_CHANNALS = 100;
     private static final String RMQ_LOCAL_HOST = "localhost";
-    private static final String RMQ_REMOTE_HOST = "52.35.118.136";
+    private static final String RMQ_REMOTE_HOST = "44.242.45.40";
     private RMQChannelPool rmqChannelPool;
 
     @Override
     public void init() throws ServletException{
         super.init();
         ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("52.35.118.136");
+    connectionFactory.setHost(RMQ_REMOTE_HOST);
 
         connectionFactory.setUsername("admin");
         connectionFactory.setPassword("password");
@@ -42,7 +42,6 @@ public class TwinderServlet extends HttpServlet {
             final Connection connection = connectionFactory.newConnection();
             RMQChannelFactory rmqChannelFactory = new RMQChannelFactory(connection);
             rmqChannelPool = new RMQChannelPool(NUM_CHANNALS, rmqChannelFactory);
-            System.out.println("init");
         } catch (IOException | TimeoutException e) {
             e.printStackTrace();
         }
@@ -74,11 +73,8 @@ public class TwinderServlet extends HttpServlet {
         }
 
         String postBody = getPostBody(request);
-
         if (isValidPostUrl(urlPath) && isValidPostBody(postBody, gson)) {
-            //      jsonResponse.put("message", "missing paramterers");
             SwipeData swipeData = generateMessage(urlPath, postBody, gson);
-//            System.out.println(gson.toJson(swipeData));
             sendMessageToQueue(gson.toJson(swipeData));
 
             response.setStatus(HttpServletResponse.SC_CREATED);//201
@@ -113,20 +109,18 @@ public class TwinderServlet extends HttpServlet {
     private boolean isValidPostUrl(String urlPath) {
         String regex_left = "\\/left\\/";
         String regex_right ="\\/right\\/";
-//        boolean t1 = urlPath.matches(regex_left);
-//        boolean t2 = urlPath.matches(regex_right);
         return urlPath.matches(regex_left) || urlPath.matches(regex_right);
     }
 
+//    private boolean isValidPostUrlTest(String[] urlParts) {
+////        String[] urlParts = urlPath.split("/");
+//        if (urlParts[1].equals("left") || urlParts[1].equals("right")) {
+//            return true;
+//        }
+//        return false;
+//    }
+
     private boolean isValidPostBody(String postBody, Gson gson) {
-//        StringBuilder sb = new StringBuilder();
-//        Gson gson = new Gson();
-//        String s = null;
-
-
-//            while ((s = request.getReader().readLine()) != null) {
-//                sb.append(s);
-//            }
         if (postBody == null) return false;
 
         SwipeDetails swipe = (SwipeDetails) gson.fromJson(postBody, SwipeDetails.class);
@@ -155,13 +149,8 @@ public class TwinderServlet extends HttpServlet {
     private boolean sendMessageToQueue(String message) {
         try {
             Channel channel = rmqChannelPool.borrowObject();
-            //set up exchange or queue
-//            channel.exchangeDeclare("exchange", "fanout");
+            System.out.println();
             channel.basicPublish("exchange", "", null, message.getBytes());
-//            channel.queueDeclare("QueueName",false, false, false, null);
-            //MessageProperties or not?? MessageProperties.PERSISTENT_TEXT_PLAIN
-//            channel.basicPublish("","QueueName", null, message.getBytes(StandardCharsets.UTF_8));
-
             // return channel to the pool
             rmqChannelPool.returnObject(channel);
             return true;
