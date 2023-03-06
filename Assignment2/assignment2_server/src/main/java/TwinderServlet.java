@@ -22,17 +22,16 @@ import rmqpool.RMQChannelPool;
 @WebServlet(name = "TwinderServlet", value = "/TwinderServlet")
 public class TwinderServlet extends HttpServlet {
 
-    private static final int NUM_CHANNALS = 100;
+    private static final int NUM_CHANNALS = 50;
     private static final String RMQ_LOCAL_HOST = "localhost";
-    private static final String RMQ_REMOTE_HOST = "44.242.45.40";
-    private RMQChannelPool rmqChannelPool;
+    private static final String RMQ_REMOTE_HOST = "44.242.45.40";//public 44.242.45.40
+    private static RMQChannelPool rmqChannelPool;
 
     @Override
     public void init() throws ServletException{
         super.init();
         ConnectionFactory connectionFactory = new ConnectionFactory();
-    connectionFactory.setHost(RMQ_REMOTE_HOST);
-
+        connectionFactory.setHost(RMQ_REMOTE_HOST);
         connectionFactory.setUsername("admin");
         connectionFactory.setPassword("password");
         connectionFactory.setPort(5672);
@@ -46,6 +45,11 @@ public class TwinderServlet extends HttpServlet {
             e.printStackTrace();
         }
 
+        try {
+            declareExchange("exchange", "fanout");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -112,14 +116,6 @@ public class TwinderServlet extends HttpServlet {
         return urlPath.matches(regex_left) || urlPath.matches(regex_right);
     }
 
-//    private boolean isValidPostUrlTest(String[] urlParts) {
-////        String[] urlParts = urlPath.split("/");
-//        if (urlParts[1].equals("left") || urlParts[1].equals("right")) {
-//            return true;
-//        }
-//        return false;
-//    }
-
     private boolean isValidPostBody(String postBody, Gson gson) {
         if (postBody == null) return false;
 
@@ -145,11 +141,15 @@ public class TwinderServlet extends HttpServlet {
         return swipeData;
     }
 
-    //Question: JSONObject or String?
+    private void declareExchange(String EXCHANGE_NAME, String EXCHANGE_TYPE) throws Exception {
+        Channel channel = rmqChannelPool.borrowObject();
+        channel.exchangeDeclare(EXCHANGE_NAME, EXCHANGE_TYPE, true);
+        rmqChannelPool.returnObject(channel);
+    }
+
     private boolean sendMessageToQueue(String message) {
         try {
             Channel channel = rmqChannelPool.borrowObject();
-            System.out.println();
             channel.basicPublish("exchange", "", null, message.getBytes());
             // return channel to the pool
             rmqChannelPool.returnObject(channel);
