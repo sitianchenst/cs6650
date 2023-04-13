@@ -16,11 +16,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Main {
 
   private static final Integer NUM_TOTAL_SWIPE_REQUESTS =500000;
-  private static final Integer NUM_TOTAL_CONSUMER_THREADS = 20;
-  private static final Integer NUM_CONSUMERS_EACH_THREAD = 25000;
+  private static final Integer NUM_TOTAL_CONSUMER_THREADS = 50;
+  private static final Integer NUM_CONSUMERS_EACH_THREAD = 10000;
 
-  private static final Integer NUM_TOTAL_PRODUCER_THREADS = 20;
-  private static final Integer NUM_PRODUCERS_EACH_THREAD = 25000;
+  private static final Integer NUM_TOTAL_PRODUCER_THREADS = 50;
+  private static final Integer NUM_PRODUCERS_EACH_THREAD = 10000;
   private static final String POST_BASE_PATH_LOCAL = "http://localhost:8080/assignment1_server_war_exploded/";
   private static final String POST_BASE_PATH_REMOTE = "http://34.221.232.46:8080/assignment2_server_war/";
   private static final String GET_BASE_PATH_LOCAL = "http://localhost:8080/assignment3_server_war_exploded/";
