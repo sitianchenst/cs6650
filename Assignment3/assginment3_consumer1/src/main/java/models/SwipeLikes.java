@@ -1,18 +1,22 @@
 package models;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
 @AllArgsConstructor
-@NoArgsConstructor
+@ToString
 public class SwipeLikes {
 
-    String swiper;
-    Long likes;
-    Long dislikes;
+    public SwipeLikes(String userId) {
+        this.userId = userId;
+        this.likes = "0";
+        this.dislikes = "0";
+    }
+
+    @PartitionKey
+    String userId;
+    String likes;
+    String dislikes;
 
 }
