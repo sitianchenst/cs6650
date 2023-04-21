@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="assignment2_consumer2:jar5" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76158958-50a2-4bfd-b9d1-1cb8ceb1367f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/csv/swipe_record100000requests.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/csv/swipe_record100000requests.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/csv/swipe_record10000requests.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/csv/swipe_record10000requests.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/csv/swipe_record500000requests.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/csv/swipe_record500000requests.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/src/main/java/part1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/src/main/java/part1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/src/main/java/part2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/src/main/java/part2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/src/main/java/part2/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/src/main/java/part2/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/assignment1_client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/assignment1_client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/Model/SwipeAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/Model/SwipeActionGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/Model/SwiperProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/MultiThreadClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/SwipeData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/SwipeData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part1/SwipePost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/CSVGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/CSVGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/ConsumerPart2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/ConsumerPart2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/DataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/DataGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/SwipeData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/classes/part2/SwipeData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/TwinderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/TwinderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/models/ResponseMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/models/ResponseMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/models/SwipeDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/models/SwipeDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/assignment1_server/target/classes/util/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment1/java-client-generated/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment1/java-client-generated/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/artifacts/assignment1_server_war4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/artifacts/assignment2_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/artifacts/assignment2_server_war2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/assignment1_server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/assignment2_server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/assignment1_server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1_server/assignment2_server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/.idea/artifacts/assignment2_consumer1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/.idea/artifacts/assignment2_consumer1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/src/main/java/Consumer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/src/main/java/Consumer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/src/main/java/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/src/main/java/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/Consumer1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/Consumer1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/Main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/Main1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/models/SwipeData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/models/SwipeData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/models/SwipeDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/target/classes/models/SwipeDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_consumer1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_consumer1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Consumer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Consumer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Consumer2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Consumer2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_jar/assignment2_server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_jar/assignment2_server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_war_exploded/WEB-INF/classes/TwinderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_war_exploded/WEB-INF/classes/TwinderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_war_exploded/WEB-INF/classes/rmqpool/RMQChannelPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_war_exploded/WEB-INF/classes/rmqpool/RMQChannelPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_war_exploded/WEB-INF/lib/assignment2_server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/out/artifacts/assignment2_server_war_exploded/WEB-INF/lib/assignment2_server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/src/main/java/TwinderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/src/main/java/TwinderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/src/main/java/rmqpool/RMQChannelPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/src/main/java/rmqpool/RMQChannelPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/target/classes/TwinderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/target/classes/TwinderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment2_server/target/classes/rmqpool/RMQChannelPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2_server/target/classes/rmqpool/RMQChannelPool.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2MOkNX2KeU4xOhopYujBg3iG6IJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.23908046" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main2" />
+      <module name="assignment2_consumer2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76158958-50a2-4bfd-b9d1-1cb8ceb1367f" name="Changes" comment="" />
+      <created>1677645976953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677645976953</updated>
+      <workItem from="1677645978724" duration="10472000" />
+      <workItem from="1677709852046" duration="5000" />
+      <workItem from="1677710384370" duration="189000" />
+      <workItem from="1677712462957" duration="1325000" />
+      <workItem from="1677713953015" duration="579000" />
+      <workItem from="1677720146636" duration="504000" />
+      <workItem from="1677720933641" duration="2842000" />
+      <workItem from="1677726157596" duration="2415000" />
+      <workItem from="1677740787768" duration="358000" />
+      <workItem from="1678003644682" duration="925000" />
+      <workItem from="1678005758852" duration="112000" />
+      <workItem from="1678006934052" duration="431000" />
+      <workItem from="1678066806082" duration="213000" />
+      <workItem from="1678069667028" duration="179000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

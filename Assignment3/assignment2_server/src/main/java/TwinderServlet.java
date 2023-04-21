@@ -24,7 +24,7 @@ public class TwinderServlet extends HttpServlet {
 
     private static final int NUM_CHANNALS = 50;
     private static final String RMQ_LOCAL_HOST = "localhost";
-    private static final String RMQ_REMOTE_HOST = "52.10.201.101";//public 44.242.45.40
+    private static final String RMQ_REMOTE_HOST = "34.223.230.144";
     private static RMQChannelPool rmqChannelPool;
 
     @Override
