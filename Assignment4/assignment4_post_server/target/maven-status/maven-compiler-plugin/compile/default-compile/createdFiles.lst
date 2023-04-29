@@ -1,4 +1,6 @@
-MatchServlet.class
 models/ResponseMessage.class
-models/Matches.class
+models/SwipeData.class
+rmqpool/RMQChannelPool.class
 models/SwipeDetails.class
+TwinderServlet.class
+rmqpool/RMQChannelFactory.class
