@@ -1,6 +1,4 @@
-/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment2/assignment2_server/src/main/java/rmqpool/RMQChannelPool.java
-/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment2/assignment2_server/src/main/java/rmqpool/RMQChannelFactory.java
-/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment2/assignment2_server/src/main/java/TwinderServlet.java
-/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment2/assignment2_server/src/main/java/models/ResponseMessage.java
-/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment2/assignment2_server/src/main/java/models/SwipeData.java
-/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment2/assignment2_server/src/main/java/models/SwipeDetails.java
+/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment3/src/main/java/models/ResponseMessage.java
+/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment3/src/main/java/models/SwipeDetails.java
+/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment3/src/main/java/MatchServlet.java
+/Users/sitianchen/Desktop/NEU/6650spring2023/github/cs6650/Assignment3/src/main/java/models/Matches.java
