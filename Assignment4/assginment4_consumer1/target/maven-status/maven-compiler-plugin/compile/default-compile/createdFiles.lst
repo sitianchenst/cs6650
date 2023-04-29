@@ -1,0 +1,8 @@
+models/SwipeData.class
+consumer/SwipeLikeConsumer.class
+models/SwipeDetails.class
+exception/InvalidSwipeDataException.class
+Main1.class
+models/PartitionKey.class
+service/DynamoService.class
+models/SwipeLikes.class

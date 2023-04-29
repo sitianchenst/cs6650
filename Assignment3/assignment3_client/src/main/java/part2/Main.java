@@ -15,16 +15,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
 
-  private static final Integer NUM_TOTAL_SWIPE_REQUESTS =500000;
+  private static final Integer NUM_TOTAL_SWIPE_REQUESTS =1000;
   private static final Integer NUM_TOTAL_CONSUMER_THREADS = 50;
-  private static final Integer NUM_CONSUMERS_EACH_THREAD = 10000;
+  private static final Integer NUM_CONSUMERS_EACH_THREAD = 20;
 
   private static final Integer NUM_TOTAL_PRODUCER_THREADS = 50;
-  private static final Integer NUM_PRODUCERS_EACH_THREAD = 10000;
+  private static final Integer NUM_PRODUCERS_EACH_THREAD = 20;
   private static final String POST_BASE_PATH_LOCAL = "http://localhost:8080/assignment1_server_war_exploded/";
-  private static final String POST_BASE_PATH_REMOTE = "http://34.221.232.46:8080/assignment2_server_war/";
+  private static final String POST_BASE_PATH_REMOTE = "http://54.191.139.21:8080/assignment2_server_war/";
   private static final String GET_BASE_PATH_LOCAL = "http://localhost:8080/assignment3_server_war_exploded/";
-  private static final String GET_BASE_PATH_REMOTE = "http://35.87.194.45:8080/assignment3_server_war/";
+  private static final String GET_BASE_PATH_REMOTE = "http://44.229.4.157:8080/assignment3_server_war/";
   private static final String GET_BASE_PATH_LB = "http://a3-get-lb-1620590431.us-west-2.elb.amazonaws.com:8080/assignment3_server_war/";
   private static final String BASE_PATH_REMOTE_SPRING = "http://54.190.56.78:8082";
   private static final String BASE_PATH_REMOTE_SPRING_LOCAL = "http://localhost:8082";
@@ -64,20 +64,21 @@ public class Main {
     recordPost = new Record();
     for (int i = 0; i < NUM_TOTAL_CONSUMER_THREADS; i++) {
       SwipeApi swipeApi = new SwipeApi(new ApiClient());
-      swipeApi.getApiClient().setBasePath(BASE_PATH_POST_LB);
+      swipeApi.getApiClient().setBasePath(POST_BASE_PATH_REMOTE);
 
       new Thread(new ConsumerPart2(queue, NUM_CONSUMERS_EACH_THREAD, successful_requests_post,
           unsuccessful_requests_post, countDownLatch, swipeApi, recordPost)).start();
     }
+
     System.out.println("--------------GET REQUESTS STARS--------------");
     //Get Requests
     ApiClient apiClient = new ApiClient();
     MatchesApi matchesApi = new MatchesApi(apiClient);
-    matchesApi.getApiClient().setBasePath(GET_BASE_PATH_LB);
+    matchesApi.getApiClient().setBasePath(GET_BASE_PATH_LOCAL);
     StatsApi statsApi = new StatsApi(apiClient);
-    statsApi.getApiClient().setBasePath(GET_BASE_PATH_LB);
+    statsApi.getApiClient().setBasePath(GET_BASE_PATH_LOCAL);
     recordGet = new Record();
-    executorService.scheduleAtFixedRate(new GetThread(GET_BASE_PATH_LB, successful_requests_get, unsuccessful_requests_get, recordGet, matchesApi, statsApi),0, 200, TimeUnit.MILLISECONDS);
+    executorService.scheduleAtFixedRate(new GetThread(GET_BASE_PATH_LOCAL, successful_requests_get, unsuccessful_requests_get, recordGet, matchesApi, statsApi),0, 200, TimeUnit.MILLISECONDS);
 
 //    Thread t = new Thread(new GetThread(GET_BASE_PATH_LOCAL, successful_requests_get, unsuccessful_requests_get, recordGet, matchesApi, statsApi));
 //    t.start();
@@ -85,10 +86,10 @@ public class Main {
 
 
     countDownLatch.await();
-    System.out.println("--------------POST REQUESTS FINISHED--------------");
-    executorService.shutdownNow();
-    System.out.println("--------------GET REQUESTS FINISHED--------------");
-
+//    System.out.println("--------------POST REQUESTS FINISHED--------------");
+//    executorService.shutdownNow();
+//    System.out.println("--------------GET REQUESTS FINISHED--------------");
+//
     long endTime = System.currentTimeMillis();
     long wallTime = (endTime - startTime);
     double wallTimeSeconds = wallTime / (double)1000;
